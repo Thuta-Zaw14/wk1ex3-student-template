@@ -36,7 +36,7 @@
     <button onclick="add()">Add Number 1 and Number 2</button>
     <script>
       function add() {
-      if (isNaN(document.getElementById('num1').value) && isNaN(document.getElementById('num2').value)) {
+      if (isNaN(document.getElementById('num1').value) || isNaN(document.getElementById('num2').value)) {
         console.log("Please enter numbers only")
       } else {
         let sum = Number(document.getElementById('num1').value) + Number(document.getElementById('num2').value);
